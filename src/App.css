@@ -1,0 +1,48 @@
+/* Fullscreen background on body */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('C:\Users\ASUS\Desktop\projectoo\anime-chatbot\public\background.jpg'); /* must be in /public */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+/* Root layout */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App wrapper to center content */
+.app-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: brightness(0.85); /* optional for readability */
+}
+
+/* Title */
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Optional reusable utilities */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

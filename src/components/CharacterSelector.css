@@ -1,0 +1,55 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  margin-top: 2rem;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.carousel-circle {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin: 0 -35px;
+  overflow: hidden;
+  background-color: white;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-circle.active {
+  transform: scale(1.3);
+  filter: none;
+  z-index: 2;
+}
+
+.carousel-circle.blurred {
+  transform: scale(0.85);
+  filter: blur(1px) grayscale(70%);
+  z-index: 1;
+}
+
+.char-name {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
