@@ -16,7 +16,7 @@ const ChatBox = ({ character }) => {
     setLoading(true);
 
     try {
-      const res = await fetch('https://one-piece-backend.onrender.com/api/chat', {
+      const res = await fetch('https://one-piece-chat-bot.onrender.com/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
