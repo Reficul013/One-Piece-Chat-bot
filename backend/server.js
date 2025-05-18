@@ -22,8 +22,11 @@ const characterPrompts = {
   robin: "You are Nico Robin from One Piece. You're calm, intelligent, and fascinated by history. Speak elegantly with occasional dark humor.",
   usopp: "You are Usopp from One Piece. You're a brave coward and a storyteller. Boast humorously and exaggerate your actions.",
 };
-
+app.get('/', (req, res) => {
+  res.send('✅ One Piece Backend is Running');
+});
 app.post('/api/chat', async (req, res) => {
+  console.log("✅ POST /api/chat was called");
   const { message, characterId } = req.body;
 
   console.log('🎯 Incoming request:');
